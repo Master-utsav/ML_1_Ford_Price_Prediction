@@ -862,3 +862,136 @@ input[type=number]::-webkit-outer-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+/* ════════════════════════════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════════════════════════════ */
+.footer-root {
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-inner {
+  max-width: 42rem;
+  /* matches max-w-2xl card */
+  margin: 0 auto;
+  padding: 0 1rem 2.5rem;
+}
+
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  margin-bottom: 1.5rem;
+}
+
+/* ── Main row ─────────────────────────────────────────────────── */
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* Brand cluster */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-logo {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.35);
+}
+
+.footer-brand-name {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--text-hi);
+  letter-spacing: -0.01em;
+}
+
+.footer-version {
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  color: var(--muted-col);
+  letter-spacing: 0.05em;
+}
+
+.footer-dot {
+  color: var(--border-hi);
+  font-size: 12px;
+  user-select: none;
+}
+
+/* Links cluster */
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dim);
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  transition: color 0.18s, border-color 0.18s, background 0.18s;
+}
+
+.footer-link:hover {
+  color: var(--sky);
+  border-color: rgba(56, 189, 248, 0.35);
+  background: var(--blue-dim);
+}
+
+.footer-link-github {
+  gap: 6px;
+}
+
+/* ── Copyright row ────────────────────────────────────────────── */
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 11px;
+  color: var(--muted-col);
+}
+
+.footer-copy-text {
+  color: var(--muted-col);
+}
+
+.footer-author-link {
+  color: var(--sky);
+  font-weight: 700;
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.01em;
+  transition: color 0.15s;
+}
+
+.footer-author-link:hover {
+  color: var(--text-hi);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

@@ -17,6 +17,7 @@ import { useExchangeRate } from "@/hooks/useExchangeRate";
 import { useSlider } from "@/hooks/useSlider";
 import { usePredict } from "@/hooks/usePredict";
 import { SLIDER_CONFIG } from "@/constants/constants";
+import { Footer } from "@/components/Footer";
 
 export default function PredictPage() {
   const { rate, label, loading: rateLoading } = useExchangeRate();
@@ -75,7 +76,7 @@ export default function PredictPage() {
 
       <ExchangeRateBanner label={label} loading={rateLoading} />
 
-      <div className="relative max-w-2xl mx-auto px-4 pb-24 fade-up delay-3">
+      <main className="relative max-w-2xl mx-auto px-4 pb-24 fade-up delay-3">
         <div className="card p-6 sm:p-8">
           <VehicleIdentitySection form={form} setField={setField} />
 
@@ -122,7 +123,8 @@ export default function PredictPage() {
         <p className="text-center text-xs mt-6 disclaimer-text">
           Ford Price Oracle · ML v1.0 · Estimates only
         </p>
-      </div>
+      </main>
+      <Footer />
     </div>
   );
 }
